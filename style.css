@@ -1,0 +1,167 @@
+/* Cyberpunk Gaming Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #05050a;
+    color: #00ffcc;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-image:
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+    background-size: 100% 4px, 6px 100%;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3), inset 0 0 15px rgba(0, 255, 204, 0.2);
+    border-radius: 4px;
+}
+
+/* Headings */
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff007f;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(255, 0, 127, 0.6);
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ff007f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px rgba(255, 0, 127, 0.5);
+}
+
+/* Warning Box */
+p b {
+    color: #ffcc00;
+    background-color: rgba(255, 204, 0, 0.1);
+    padding: 10px 15px;
+    display: block;
+    border-radius: 2px;
+    border-left: 4px solid #ffcc00;
+    border-right: 1px solid rgba(255, 204, 0, 0.3);
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+/* Tariff Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #00ffcc44;
+}
+
+th {
+    background-color: rgba(0, 255, 204, 0.1);
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 255, 204, 0.02);
+}
+
+tr:last-child td {
+    background-color: rgba(255, 204, 0, 0.1);
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.4);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #00ffcc;
+    font-size: 15px;
+}
+
+input[type="text"] {
+    background-color: #0a0a16;
+    color: #00ffcc;
+    padding: 10px 12px;
+    border: 1px solid #00ffcc;
+    border-radius: 2px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px rgba(0, 255, 204, 0.2);
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff007f;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 0, 127, 0.6), inset 0 0 5px rgba(255, 0, 127, 0.2);
+    color: #ff007f;
+}
+
+/* Action Buttons */
+input[type="submit"] {
+    font-family: 'Orbitron', sans-serif;
+    padding: 12px 15px;
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    margin-top: 5px;
+}
+
+input[type="submit"][name="calculate"] {
+    background-color: rgba(0, 255, 204, 0.1);
+    border-color: #00ffcc;
+    color: #00ffcc;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+input[type="submit"][name="calculate"]:hover {
+    background-color: #00ffcc;
+    color: #05050a;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+input[type="submit"][name="reset"] {
+    background-color: rgba(255, 0, 127, 0.1);
+    border-color: #ff007f;
+    color: #ff007f;
+    text-shadow: 0 0 5px rgba(255, 0, 127, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+}
+
+input[type="submit"][name="reset"]:hover {
+    background-color: #ff007f;
+    color: #05050a;
+    box-shadow: 0 0 15px #ff007f;
+}
+
+/* Results Section */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ff007f, transparent);
+    margin: 25px 0;
+}
